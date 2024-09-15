@@ -1,4 +1,5 @@
 import * as React from "react";
+
 import {
   PlasmicComponent,
   extractPlasmicQueryData,
@@ -13,7 +14,7 @@ import { PLASMIC } from "@/plasmic-init";
 
 export default function PlasmicLoaderPage(props: {
   plasmicData?: ComponentRenderData;
-  queryCache?: Record<string, any>;
+  queryCache?: Record<string, unknown>;
 }) {
   const { plasmicData, queryCache } = props;
   const router = useRouter();
